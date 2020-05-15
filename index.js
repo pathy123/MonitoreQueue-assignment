@@ -5,9 +5,9 @@ var SLACK_CONFIG = {
     username: "AWS-Monitorqueue"
 };
 
-const aws_account_id = "241169354140";
-const aws_accessKeyId = "AKIAJC22Y45HZZNEVEVQ";
-const aws_secretAccessKey = "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";
+const aws_account_id = "xxxxxxxx";
+const aws_accessKeyId = "xxxxxxxxxxxxxxxxxx";
+const aws_secretAccessKey = "xxxxxxxxxxxxxxxxxxxxxx";
 const aws_region = "eu-west-1";
 var sqs_webfile = "https://git-codecommit.eu-west-1.amazonaws.com/v1/repos/devops/template.yaml";
 //#######################################################
