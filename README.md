@@ -31,6 +31,11 @@ queues.
 
 
 # Solution-
+Below are the tools you can use
+1. Slack
+2. AWS Lambda
+3. YAML
+
 Slack as a communication platform between teams, sending a notification to a team Slack channel is a good way to integrate between the alarting system and team communication.
 
 Created template.yaml file as per requirement given the number to monitor
@@ -53,6 +58,7 @@ sqs:
     - test_devops_stats_facebook_clicks: 25
     - test_devops_stats_phone_clicks_errors: 0
     - test_devops_stats_facebook_clicks_errors: 0
+    
 The ERROR queue will have limit value 0, where you can use x for the queue you want to skip.
 
 AWS Lambda function will run every minute to check the defined queue in the YAML file stored in GITHUB, where stakeholder can edit it easily.
@@ -61,8 +67,8 @@ AWS Lambda function will run every minute to check the defined queue in the YAML
 
 Setup steps:
 
-Create Slack App and allow it to post to a team channel.
-Create AWS SQS Queues .
-Edit the keys in Lambda source code.
-Create AWS Lambda function and delopy the code.
-Test it.
+- Create Slack App and allow it to post to a team channel.
+- Create AWS SQS Queues .
+- Edit the keys in Lambda source code.
+- Create AWS Lambda function and delopy the code.
+- Test it.
